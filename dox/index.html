@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Project 4</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--external css-->
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-responsive.css" rel="stylesheet" />        
+    </head>
+
+    <body>
+        <!--header start-->
+        <header class="header-frontend">
+            <div class="navbar navbar-default navbar-fixed-top" style="background-color: #fafbaa">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">CSE 5694 - Robotics & AI - <span>Project 4</span></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="visualization.html">Visualization</a></li>                                                    
+                            <li><a href="algorithm.html">Algorithm</a></li>                                                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->  
+
+        <!--container start-->
+        <div class="container" style="padding-top: 4%">
+            <div class="row">
+                <!--feature start-->
+                <div class="col-sm-5">
+                    <img src="img/FIT-Logo.jpg">
+                </div>
+                <div class="text-right feature-head col-sm-7">
+                    <h3>Term: Spring 2017<br><br>
+                        Instructor: Dr. Marius C. Silaghi <br><br>
+                        Team Members: Roger Ballard, Zubin Kadva, Zongqiao Liu</h3>                    
+                </div>  
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 5%">
+            <div class="row">     
+                <div class="feature-head">
+                    <h1>Problem Description</h1>
+                    <p>
+                        Map the north face exterior of the Harris Building between the 2 staircases (west to east), using odometer, bump, and range sensors.
+                    </p>
+
+                    <h1>iROBOT CREATE ANATOMY</h1>
+                    <img style="margin: 0 auto; display: block" src="img/irobot.PNG">
+
+                    <!--<h1>virtual wall</h1>
+                    <p>
+                        A Virtual Wall creates an invisible barrier that iRobot Create will not cross by emitting infrared signals that iRobot Create sees with its Omnidirectional IR receiver. The invisible barrier can range from 3 to 8 feet long. You can set the range of the invisible barrier by adjusting a slider bar on the Virtual Wall. To create an invisible barrier greater than eight feet wide, you may need additional Virtual Walls. 
+                    </p>
+                    <p>
+                        The Virtual Wall requires 2 “D” batteries and automatically shuts off after 110 minutes. If the power light blinks green, the batteries will soon need replacement.
+                    </p>
+                    <img style="margin: 0 auto; display: block" src="img/virtual.PNG">-->
+
+                    <h1>user manuals</h1>
+                    <table style="width: 100%">
+                        <tr>
+                            <td style="padding: 0px 10px 0px 0px">
+                                <iframe src="files/Create Open Interface_v2.pdf" style="height: 450%; width: 100%">
+                                    Unable to view? Download it <a href="files/Create Open Interface_v2.pdf">here</a>
+                                </iframe>
+                            </td>
+                            <td style="padding: 0px 0px 0px 10px">
+                                <iframe src="files/Create Manual_Final.pdf" style="height: 450%; width: 100%">
+                                    Unable to view? Download it <a href="files/Create Manual_Final.pdf">here</a>
+                                </iframe>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h1>projected path traversal</h1>
+                    <p>
+                        <img style="margin: 0 auto; display: block; width: 100%" src="img/Projected_Path_Traversal.png">                    
+                    </p>
+
+                    <h1><a href="files/Project4.zip">Source Code</a></h1>
+                    <p>This code has been written using the Java programming language.</p>                                
+                    <p>The source code for this project is available <a href="files/Project4.zip">here</a>.</p> 
+
+                    <h1>Video output</h1>
+                    <p>
+                        <iframe style="margin: 0 auto; display: block" width="560" height="315" src="https://www.youtube.com/embed/O6WNXdNUj8M" frameborder="0" allowfullscreen></iframe>
+                    </p>
+                    
+                    <h1>generated map</h1>
+                    <p>
+                       <img style="margin: 0 auto; display: block" src="img/index_map.png">
+                    </p>
+                    
+                    <h1>map measurements</h1>
+                    <pre><code>----------MAP----------
+GO 3497mm
+TURN RIGHT
+GO 2009mm
+TURN LEFT
+GO 2252mm
+TURN LEFT
+GO 572mm
+TURN RIGHT
+GO 911mm
+TURN LEFT
+GO 639mm
+TURN RIGHT
+GO 4326mm
+TURN RIGHT
+GO 692mm
+TURN LEFT
+GO 793mm
+TURN RIGHT
+GO 746mm
+TURN LEFT
+GO 2316mm
+TURN LEFT
+GO 1866mm
+TURN RIGHT
+GO 4384mm
+--------END MAP--------    </code></pre>
+
+                    <br><br><br>
+                    <h4>Image courtesy and references</h4>    
+                    <br>
+                    <i> https://www.amazon.com/iRobot-Roomba-Virtual-Wall-2003/dp/B00009PGO5</i><br>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

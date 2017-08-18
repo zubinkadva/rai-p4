@@ -1,0 +1,1 @@
+java -cp bin;deps\RXTXcomm.jar -Djava.library.path=deps control.Project4

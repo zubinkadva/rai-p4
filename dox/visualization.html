@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Project 4</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--external css-->
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-responsive.css" rel="stylesheet" />        
+    </head>
+
+    <body>
+        <!--header start-->
+        <header class="header-frontend">
+            <div class="navbar navbar-default navbar-fixed-top" style="background-color: #fafbaa">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">CSE 5694 - Robotics & AI - <span>Project 4</span></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="visualization.html">Visualization</a></li>                                                    
+                            <li><a href="algorithm.html">Algorithm</a></li>                                                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->  
+
+        <!--container start-->
+        <div class="container" style="padding-top: 4%">
+            <div class="row">
+                <!--feature start-->
+                <div class="col-sm-5">
+                    <img src="img/FIT-Logo.jpg">
+                </div>
+                <div class="text-right feature-head col-sm-7">
+                    <h3>Term: Spring 2017<br><br>
+                        Instructor: Dr. Marius C. Silaghi <br><br>
+                        Team Members: Roger Ballard, Zubin Kadva, Zongqiao Liu</h3>                    
+                </div>  
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 5%">
+            <div class="row">     
+                <div class="feature-head">
+                    <h1>drawing a map</h1>
+                    <p>
+                        We use the <code>JFrame</code> and <code>JPanel</code> classes to dynamically draw a map of the environment. A small snippet is given below:
+                    </p>
+                    <pre><code>public class Visualizer extends JPanel {
+
+    public static void main(String a[]) {
+        JFrame containerFrame = new JFrame();
+        containerFrame.getContentPane().add(new Visualizer());
+        containerFrame.setSize(500, 500);
+
+        containerFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        containerFrame.setVisible(true);
+    }
+
+    public void paint(Graphics g) {     
+        g.drawLine(100, 100, 100, 200);
+        g.drawLine(100, 200, 300, 200);
+        g.drawLine(300, 200, 300, 300);
+        g.drawLine(300, 300, 100, 300);
+        g.drawLine(100, 300, 100, 400);
+    }
+
+}
+</code></pre>
+                    <h1>Sample output</h1>
+                    <img style="margin: 0 auto; display: block" src="img/visual.PNG">
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
